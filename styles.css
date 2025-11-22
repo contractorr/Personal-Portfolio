@@ -6,8 +6,8 @@
     /* Charcoal */
     --text-secondary: #5F5F5F;
     /* Dark Grey */
-    --accent-primary: #2C5F6D;
-    /* Deep Teal */
+    --accent-primary: #96C0A5;
+    /* Soft Teal */
     --accent-secondary: #E8ECEF;
     /* Cool Grey accent */
     --font-main: 'Inter', sans-serif;
@@ -118,6 +118,18 @@ h4 {
 
 .btn-secondary:hover {
     background: var(--text-primary);
+    color: white;
+}
+
+.btn:visited {
+    color: inherit;
+}
+
+.btn-secondary:visited {
+    color: var(--text-primary);
+}
+
+.btn-secondary:hover:visited {
     color: white;
 }
 
