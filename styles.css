@@ -1,23 +1,24 @@
 :root {
-    --bg-color: #F9F8F6;
-    /* Cream/Off-white */
+    --bg-color: #FAFAFA;
+    /* Crisp Off-White */
     --card-bg: #FFFFFF;
     --text-primary: #2D2D2D;
     /* Charcoal */
     --text-secondary: #5F5F5F;
     /* Dark Grey */
-    --accent-primary: #D97757;
-    /* Terracotta */
-    --accent-secondary: #E8DCCA;
-    /* Beige accent */
+    --accent-primary: #2C5F6D;
+    /* Deep Teal */
+    --accent-secondary: #E8ECEF;
+    /* Cool Grey accent */
     --font-main: 'Inter', sans-serif;
-    --font-heading: 'Libre Baskerville', serif;
+    --font-heading: 'Playfair Display', serif;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 5rem;
     --container-width: 1100px;
-    --border-radius: 8px;
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --border-radius: 4px;
+    /* Sharper corners */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 * {
@@ -88,11 +89,13 @@ h4 {
 .btn {
     display: inline-block;
     padding: 0.8rem 1.8rem;
-    border-radius: 6px;
+    border-radius: 4px;
+    /* Sharper corners */
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease;
     font-size: 0.95rem;
+    letter-spacing: 0.5px;
 }
 
 .btn-primary {
@@ -102,8 +105,8 @@ h4 {
 }
 
 .btn-primary:hover {
-    background-color: #c06345;
-    border-color: #c06345;
+    background-color: #1e4550;
+    border-color: #1e4550;
 }
 
 .btn-secondary {
@@ -128,7 +131,8 @@ h4 {
     backdrop-filter: blur(8px);
     z-index: 1000;
     padding: 1.2rem 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    /* Slightly stronger border */
 }
 
 .nav-container {
