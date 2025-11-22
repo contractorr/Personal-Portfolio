@@ -3,8 +3,10 @@
     --card-bg: #171717;
     --text-primary: #ffffff;
     --text-secondary: #a3a3a3;
-    --accent-primary: #3b82f6; /* Blue */
-    --accent-secondary: #8b5cf6; /* Purple */
+    --accent-primary: #3b82f6;
+    /* Blue */
+    --accent-secondary: #8b5cf6;
+    /* Purple */
     --accent-gradient: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
     --font-main: 'Inter', sans-serif;
     --font-heading: 'Outfit', sans-serif;
@@ -50,7 +52,10 @@ ul {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--font-heading);
     font-weight: 700;
     line-height: 1.2;
@@ -90,7 +95,8 @@ h1, h2, h3, h4 {
     background: transparent;
     border: 2px solid var(--accent-primary);
     color: var(--text-primary);
-    margin-left: var(--spacing-sm);
+    color: var(--text-primary);
+    margin-left: 0;
 }
 
 .btn-secondary:hover {
@@ -155,7 +161,8 @@ h1, h2, h3, h4 {
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding-top: 60px; /* Navbar height */
+    padding-top: 60px;
+    /* Navbar height */
 }
 
 .hero-content {
@@ -183,6 +190,12 @@ h1, h2, h3, h4 {
     max-width: 600px;
 }
 
+.hero-cta {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
 .hero-background {
     position: absolute;
     top: 50%;
@@ -198,8 +211,15 @@ h1, h2, h3, h4 {
 }
 
 @keyframes float {
-    0%, 100% { transform: translate(0, 0); }
-    50% { transform: translate(-20px, 20px); }
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-20px, 20px);
+    }
 }
 
 /* Sections */
@@ -411,19 +431,20 @@ h1, h2, h3, h4 {
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.5rem;
     }
-    
+
     .nav-links {
-        display: none; /* Simple hide for now, can add JS toggle later if needed */
+        display: none;
+        /* Simple hide for now, can add JS toggle later if needed */
     }
-    
+
     .timeline::before {
         left: 0;
     }
-    
+
     .timeline-item {
         padding-left: 1.5rem;
     }
